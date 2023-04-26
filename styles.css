@@ -2,11 +2,11 @@
   width: 100%;
   height: 80vh;
   background-image: linear-gradient(0deg, 
-            rgba(0,0,0,0.3), 
-            rgba(0,0,0,0.3)
-            ), url(./assets/paola2.JPG);
+            rgba(0,0,0,0.2), 
+            rgba(0,0,0,0.2)
+            ), url(./assets/paola6.JPG);
   background-size: cover;  
-  background-position: left;        
+  background-position: center top 20%;        
   margin-top: 100px;
 }
 
@@ -106,6 +106,114 @@
   100% {
     transform: translateY(-10px);
   }
+}
+  /*--------------------------------------------------------------
+# About Us
+--------------------------------------------------------------*/
+
+.about h2 {
+  margin: 40px;
+  font-weight: bold;
+  color: #e4c247;
+  background-image: linear-gradient(to right, black,  #e4c247, black);
+  background-position: bottom;
+  background-size: 80% 1.5px;
+  background-repeat: no-repeat;
+  padding-bottom: 20px;
+}
+.about .content p {
+  font-size: 18px;
+  margin: 20px 50px;
+  text-align: justify;
+}
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+.about .content .btn-learn-more {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 4px;
+  transition: 0.3s;
+  line-height: 1;
+  color: #e4c247;
+  animation-delay: 0.8s;
+  margin-top: 6px;
+  border: 2px solid #e4c247;
+  margin-bottom: 40px;
+}
+
+.about .content .btn-learn-more:hover {
+  background:#cbab38;
+  color: #fff;
+  text-decoration: none;
+}
+  /*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services {
+  background-color: #f3f1ee;
+}
+.services h2 {
+  padding: 40px;
+  font-weight: bold;
+  color: #e4c247;
+  background-image: linear-gradient(to right, black,  #e4c247, black);
+  background-position: bottom;
+  background-size: 80% 1.5px;
+  background-repeat: no-repeat;
+  padding-bottom: 20px;
+}
+#cajas {
+  padding-bottom: 20px;
+}
+#cajas img {
+  clip-path: circle(50% at 50% 50%);
+}
+.services .icon-box {
+  /* box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1); */
+  padding: 50px 30px;
+  transition: all ease-in-out 0.4s;
+  background: #f3f1ee;
+}
+
+.services .icon-box .icon {
+  margin-bottom: 10px;
+}
+
+.services .icon-box .icon i {
+  color: black;
+  font-size: 36px;
+  transition: 0.3s;
+}
+
+.services .icon-box h4 {
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.services .icon-box h4 a {
+  color: #e4c247;
+  transition: ease-in-out 0.3s;
+}
+
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .icon-box:hover {
+  transform: translateY(-10px);
+}
+
+.services .icon-box:hover h4 a {
+  color:  #c5a530;
 }
 
 /* Estilos generales */
