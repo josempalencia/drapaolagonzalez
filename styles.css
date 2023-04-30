@@ -32,6 +32,7 @@
   font-family: "Jost", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  text-decoration: none;
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 28px 11px 28px;
@@ -134,6 +135,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 14px;
+  text-decoration: none;
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 32px;
@@ -176,7 +178,7 @@
 }
 .services .icon-box {
   /* box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1); */
-  padding: 50px 30px;
+  padding: 40px 20px;
   transition: all ease-in-out 0.4s;
   background: #f3f1ee;
 }
@@ -199,6 +201,7 @@
 
 .services .icon-box h4 a {
   color: #e4c247;
+  text-decoration: none;
   transition: ease-in-out 0.3s;
 }
 
@@ -261,4 +264,199 @@ body {
     text-align: center;
     color: #888;
   }
+/* 
+  About Me Section  */
+  #aboutMe {
+    width: 100%;
+    height: 80vh;
+    background: #fff;
+  }
   
+  #aboutMe .container {
+    padding-top: 72px;
+  }
+  
+  #aboutMe h2 {
+    padding: 40px;
+    font-weight: bold;
+    color: #e4c247;
+    background-image: linear-gradient(to right, black,  #e4c247, black);
+    background-position: bottom;
+    background-size: 80% 1.5px;
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+  }
+  
+  #aboutMe h3 {
+    color: #e4c247;
+    margin-bottom: 50px;
+    font-size: 24px;
+  }
+
+  #aboutMe p {
+    font-size: 18px;
+  margin: 20px 50px;
+  text-align: justify;
+  }
+  
+  #aboutMe .btn-get-started {
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 28px 11px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px 0 0 0;
+    color: #fff;
+    background: #e4c247;
+  }
+  
+  #aboutMe .btn-get-started:hover {
+    background: #d8a720;
+  }
+  
+  
+  #aboutMe .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  }
+  
+  @media (max-width: 991px) {
+    #aboutMe {
+      height: 100vh;
+      text-align: center;
+    }
+  
+    #aboutMe .animated {
+      animation: none;
+    }
+  
+    #aboutMe .hero-img {
+      text-align: center;
+    }
+  
+    #aboutMe .hero-img img {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #aboutMe h3 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  
+    #aboutMe h3 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  
+    #aboutMe .hero-img img {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    #aboutMe .hero-img img {
+      width: 80%;
+    }
+  
+    #aboutMe .btn-get-started {
+      font-size: 16px;
+      padding: 10px 24px 11px 24px;
+    }
+  }
+  
+  @keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+  
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+
+/* Start Referencias   */
+.google-references {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.google-references h2 {
+  padding: 40px;
+  font-weight: bold;
+  color: #e4c247;
+  background-image: linear-gradient(to right, black,  #e4c247, black);
+  background-position: bottom;
+  background-size: 80% 1.5px;
+  background-repeat: no-repeat;
+  padding-bottom: 20px;
+}
+
+.carousel-container {
+  max-width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 500px;
+  padding: 20px;
+  margin-top: 40px;
+  margin-right: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.slide p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.slide:last-of-type {
+  margin-right: 0;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 10px;
+}
+.stars {
+  color: orange;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .carousel-container {
+    max-width: 100%;
+  }
+  
+  .slide {
+    width: 350px;
+    margin-right: 10px;
+  }
+  
+  .slide:last-of-type {
+    margin-right: 0;
+  }
+}
