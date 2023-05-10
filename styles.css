@@ -318,7 +318,10 @@ body {
     background: #d8a720;
   }
   
-  
+  #aboutMe img {
+    border-radius: 8px;  
+  }
+
   #aboutMe .animated {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
@@ -338,7 +341,7 @@ body {
     }
   
     #aboutMe .hero-img img {
-      width: 50%;
+      width: 90%;
     }
   }
   
@@ -355,13 +358,13 @@ body {
     }
   
     #aboutMe .hero-img img {
-      width: 70%;
+      width: 90%;
     }
   }
   
   @media (max-width: 575px) {
     #aboutMe .hero-img img {
-      width: 80%;
+      width: 100%;
     }
   
     #aboutMe .btn-get-started {
